@@ -24,6 +24,10 @@ Result:
 4 passed in 3.95s
 ```
 
+Screenshot:
+
+![Pytest results](assets/pytest-results.png)
+
 ## Demo Benchmark
 
 Command:
@@ -45,6 +49,22 @@ Max cached vs non-cached difference: 0.00000024
 Full-sequence latency: 1.364 ms
 Step-by-step cached latency: 41.190 ms
 ```
+
+Screenshot:
+
+![Benchmark demo output](assets/benchmark-demo.png)
+
+## Debug Walkthrough Screenshots
+
+The debug walkthrough prints tensor shapes, device placement, dtype, mean, and standard deviation at each major step of the decoder block.
+
+Full sequence pass:
+
+![Debug walkthrough full sequence](assets/debug-walkthrough-full.png)
+
+One-token cached pass:
+
+![Debug walkthrough cached decoding](assets/debug-walkthrough-cached.png)
 
 ## Component Verification
 

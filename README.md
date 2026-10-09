@@ -136,6 +136,10 @@ Current result:
 4 passed in 3.95s
 ```
 
+Screenshot:
+
+![Pytest results](assets/pytest-results.png)
+
 ## Run Demo and Benchmark
 
 ```powershell
@@ -148,6 +152,26 @@ The demo verifies:
 - KV cache key/value shapes
 - cached vs non-cached numerical equivalence
 - full-sequence and step-by-step decoding latency
+
+Screenshot:
+
+![Benchmark demo output](assets/benchmark-demo.png)
+
+## Debug Walkthrough
+
+Run the debug walkthrough to inspect the tensor flow through RMSNorm, RoPE, Grouped-Query Attention, KV Cache, SwiGLU, and residual connections.
+
+```powershell
+python .\debug_walkthrough.py
+```
+
+Full sequence debug output:
+
+![Debug walkthrough full sequence](assets/debug-walkthrough-full.png)
+
+One-token cached debug output:
+
+![Debug walkthrough cached decoding](assets/debug-walkthrough-cached.png)
 
 ## Notes
 
